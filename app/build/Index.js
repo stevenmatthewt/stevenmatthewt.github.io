@@ -30326,7 +30326,7 @@ function handleClick(_, _$1) {
 function make() {
   var newrecord = component.slice();
   newrecord[/* render */9] = (function () {
-      return React.createElement("body", undefined, React.createElement("nav", {
+      return React.createElement("div", undefined, React.createElement("nav", {
                       className: "white",
                       role: "navigation"
                     }, React.createElement("div", {
@@ -30335,19 +30335,28 @@ function make() {
                               className: "brand-logo",
                               id: "logo-container",
                               href: "#"
-                            }, "Logo"), React.createElement("ul", {
+                            }, "Steven Thomas"), React.createElement("ul", {
                               className: "right hide-on-med-and-down"
-                            }), React.createElement("ul", {
+                            }, React.createElement("li", undefined, React.createElement("a", {
+                                      href: "#"
+                                    }, "Navbar Link"))), React.createElement("ul", {
                               className: "side-nav",
                               id: "nav-mobile"
-                            }))), React.createElement("div", {
+                            }, React.createElement("li", undefined, React.createElement("a", {
+                                      href: "#"
+                                    }, "Navbar Link"))), React.createElement("a", {
+                              className: "button-collapse",
+                              href: "#"
+                            }, React.createElement("i", {
+                                  className: "material-icons"
+                                }, "menu")))), React.createElement("div", {
                       className: "parallax-container",
                       id: "index-banner"
                     }, React.createElement("div", {
                           className: "section no-pad-bot"
                         }, React.createElement("div", {
                               className: "container"
-                            }, React.createElement("h1", {
+                            }, React.createElement("br", undefined), React.createElement("h1", {
                                   className: "header center teal-text text-lighten-2"
                                 }, "Parallax Template"), React.createElement("div", {
                                   className: "row center"
@@ -30359,7 +30368,7 @@ function make() {
                                       className: "btn-large waves-effect waves-light teal lighten-1",
                                       id: "download-button",
                                       href: "http://materializecss.com/getting-started.html"
-                                    }, "Get Started")))), React.createElement("div", {
+                                    }, "Get Started")), React.createElement("br", undefined))), React.createElement("div", {
                           className: "parallax"
                         }, React.createElement("img", {
                               alt: "Unsplashed background img 1",

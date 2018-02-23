@@ -18,26 +18,32 @@ let handleClick = (_event, _self) => Js.log("clicked!");
    `ReasonReact.element(Page.make(~message="hello", [||]))` */
 let make = (_children) => {
   ...component,
-  render: (self) =>
-  <body>
+  render: (_self) =>
+  <div>
   <nav className="white" role="navigation">
     <div className="nav-wrapper container">
-      <a id="logo-container" href="#" className="brand-logo">(show("Logo"))</a>
+      <a id="logo-container" href="#" className="brand-logo">(show("Steven Thomas"))</a>
       <ul className="right hide-on-med-and-down">
-        /* <li><a href="#">Navbar Link</a></li> */
+        <li>
+          <a href="#">(show("Navbar Link"))</a>
+        </li>
       </ul>
 
       <ul id="nav-mobile" className="side-nav">
-        /* <li><a href="#">Navbar Link</a></li> */
+        <li>
+          <a href="#">(show("Navbar Link"))</a>
+        </li>
       </ul>
-      /* <a href="#" data-activates="nav-mobile" className="button-collapse"><i className="material-icons">menu</i></a> */
+      <a href="#" className="button-collapse"> /* data-activates="nav-mobile" */
+        <i className="material-icons">(show("menu"))</i>
+      </a>
     </div>
   </nav>
 
   <div id="index-banner" className="parallax-container">
     <div className="section no-pad-bot">
       <div className="container">
-        /* <br><br> */
+        <br />
         <h1 className="header center teal-text text-lighten-2">(show("Parallax Template"))</h1>
         <div className="row center">
           <h5 className="header col s12 light">(show("A modern responsive front-end framework based on Material Design"))</h5>
@@ -45,7 +51,7 @@ let make = (_children) => {
         <div className="row center">
           <a href="http://materializecss.com/getting-started.html" id="download-button" className="btn-large waves-effect waves-light teal lighten-1">(show("Get Started"))</a>
         </div>
-        /* <br><br> */
+        <br />
       </div>
     </div>
     <div className="parallax">
@@ -190,5 +196,5 @@ let make = (_children) => {
       </div>
     </div>
   </footer>
-  </body>
+  </div>
 };
