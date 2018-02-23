@@ -30311,6 +30311,8 @@ exports.createClass = createClass;
 
 var React = __webpack_require__(53);
 var ReasonReact = __webpack_require__(86);
+var Footer$ReactTemplate = __webpack_require__(209);
+var Navigation$ReactTemplate = __webpack_require__(210);
 
 var component = ReasonReact.statelessComponent("Page");
 
@@ -30318,104 +30320,77 @@ function show(prim) {
   return prim;
 }
 
-function handleClick(_, _$1) {
-  console.log("clicked!");
-  return /* () */0;
-}
+var summary = React.createElement("div", {
+      className: "parallax-container",
+      id: "index-banner"
+    }, React.createElement("div", {
+          className: "section no-pad-bot"
+        }, React.createElement("div", {
+              className: "container"
+            }, React.createElement("br", undefined), React.createElement("h1", {
+                  className: "header center text-lighten-2"
+                }, "Steven Thomas"), React.createElement("div", {
+                  className: "row center"
+                }, React.createElement("h5", {
+                      className: "header col s12 light"
+                    }, "Graduate of Georgia Institute of Technology. Golang Enthusiast.")))), React.createElement("div", {
+          className: "parallax"
+        }, React.createElement("img", {
+              alt: "Unsplashed background img 1",
+              src: "/assets/img/background1.jpg"
+            })));
+
+var about = React.createElement("div", {
+      className: "container",
+      id: "about"
+    }, React.createElement("div", {
+          className: "section"
+        }, React.createElement("div", {
+              className: "row"
+            }, React.createElement("div", {
+                  className: "col s12 m6"
+                }, React.createElement("div", {
+                      className: "icon-block"
+                    }, React.createElement("h2", {
+                          className: "center brown-text"
+                        }, React.createElement("i", {
+                              className: "material-icons"
+                            }, "account_circle")), React.createElement("h5", {
+                          className: "center"
+                        }, "About me"), React.createElement("p", {
+                          className: "light"
+                        }, "We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers."))), React.createElement("div", {
+                  className: "col s12 m6"
+                }, React.createElement("div", {
+                      className: "icon-block"
+                    }, React.createElement("h2", {
+                          className: "center brown-text"
+                        }, React.createElement("i", {
+                              className: "material-icons"
+                            }, "web")), React.createElement("h5", {
+                          className: "center"
+                        }, "About this site"), React.createElement("p", {
+                          className: "light"
+                        }, "By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience."))))));
+
+var contact = React.createElement("div", {
+      className: "container"
+    }, React.createElement("div", {
+          className: "section"
+        }, React.createElement("div", {
+              className: "row"
+            }, React.createElement("div", {
+                  className: "col s12 center"
+                }, React.createElement("h3", undefined, React.createElement("i", {
+                          className: "mdi-content-send brown-text"
+                        })), React.createElement("h4", undefined, "Contact Us"), React.createElement("p", {
+                      className: "left-align light"
+                    }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;")))));
 
 function make() {
   var newrecord = component.slice();
   newrecord[/* render */9] = (function () {
-      return React.createElement("div", undefined, React.createElement("nav", {
-                      className: "white",
-                      role: "navigation"
-                    }, React.createElement("div", {
-                          className: "nav-wrapper container"
-                        }, React.createElement("a", {
-                              className: "brand-logo",
-                              id: "logo-container",
-                              href: "#"
-                            }, "Steven Thomas"), React.createElement("ul", {
-                              className: "right hide-on-med-and-down"
-                            }, React.createElement("li", undefined, React.createElement("a", {
-                                      href: "#"
-                                    }, "Navbar Link"))), React.createElement("ul", {
-                              className: "side-nav",
-                              id: "nav-mobile"
-                            }, React.createElement("li", undefined, React.createElement("a", {
-                                      href: "#"
-                                    }, "Navbar Link"))), React.createElement("a", {
-                              className: "button-collapse",
-                              href: "#"
-                            }, React.createElement("i", {
-                                  className: "material-icons"
-                                }, "menu")))), React.createElement("div", {
-                      className: "parallax-container",
-                      id: "index-banner"
-                    }, React.createElement("div", {
-                          className: "section no-pad-bot"
-                        }, React.createElement("div", {
-                              className: "container"
-                            }, React.createElement("br", undefined), React.createElement("h1", {
-                                  className: "header center teal-text text-lighten-2"
-                                }, "Parallax Template"), React.createElement("div", {
-                                  className: "row center"
-                                }, React.createElement("h5", {
-                                      className: "header col s12 light"
-                                    }, "A modern responsive front-end framework based on Material Design")), React.createElement("div", {
-                                  className: "row center"
-                                }, React.createElement("a", {
-                                      className: "btn-large waves-effect waves-light teal lighten-1",
-                                      id: "download-button",
-                                      href: "http://materializecss.com/getting-started.html"
-                                    }, "Get Started")), React.createElement("br", undefined))), React.createElement("div", {
-                          className: "parallax"
-                        }, React.createElement("img", {
-                              alt: "Unsplashed background img 1",
-                              src: "/assets/img/background1.jpg"
-                            }))), React.createElement("div", {
-                      className: "container"
-                    }, React.createElement("div", {
-                          className: "section"
-                        }, React.createElement("div", {
-                              className: "row"
-                            }, React.createElement("div", {
-                                  className: "col s12 m4"
-                                }, React.createElement("div", {
-                                      className: "icon-block"
-                                    }, React.createElement("h2", {
-                                          className: "center brown-text"
-                                        }, React.createElement("i", {
-                                              className: "material-icons"
-                                            }, "flash_on")), React.createElement("h5", {
-                                          className: "center"
-                                        }, "Speeds up development"), React.createElement("p", {
-                                          className: "light"
-                                        }, "We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers."))), React.createElement("div", {
-                                  className: "col s12 m4"
-                                }, React.createElement("div", {
-                                      className: "icon-block"
-                                    }, React.createElement("h2", {
-                                          className: "center brown-text"
-                                        }, React.createElement("i", {
-                                              className: "material-icons"
-                                            }, "group")), React.createElement("h5", {
-                                          className: "center"
-                                        }, "User Experience Focused"), React.createElement("p", {
-                                          className: "light"
-                                        }, "By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience."))), React.createElement("div", {
-                                  className: "col s12 m4"
-                                }, React.createElement("div", {
-                                      className: "icon-block"
-                                    }, React.createElement("h2", {
-                                          className: "center brown-text"
-                                        }, React.createElement("i", {
-                                              className: "material-icons"
-                                            }, "settings")), React.createElement("h5", {
-                                          className: "center"
-                                        }, "Easy to work with"), React.createElement("p", {
-                                          className: "light"
-                                        }, "We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.")))))), React.createElement("div", {
+      return React.createElement("div", undefined, Navigation$ReactTemplate.render, summary, about, React.createElement("div", {
                       className: "parallax-container valign-wrapper"
                     }, React.createElement("div", {
                           className: "section no-pad-bot"
@@ -30430,19 +30405,7 @@ function make() {
                         }, React.createElement("img", {
                               alt: "Unsplashed background img 2",
                               src: "/assets/img/background2.jpg"
-                            }))), React.createElement("div", {
-                      className: "container"
-                    }, React.createElement("div", {
-                          className: "section"
-                        }, React.createElement("div", {
-                              className: "row"
-                            }, React.createElement("div", {
-                                  className: "col s12 center"
-                                }, React.createElement("h3", undefined, React.createElement("i", {
-                                          className: "mdi-content-send brown-text"
-                                        })), React.createElement("h4", undefined, "Contact Us"), React.createElement("p", {
-                                      className: "left-align light"
-                                    }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;"))))), React.createElement("div", {
+                            }))), contact, React.createElement("div", {
                       className: "parallax-container valign-wrapper"
                     }, React.createElement("div", {
                           className: "section no-pad-bot"
@@ -30457,65 +30420,16 @@ function make() {
                         }, React.createElement("img", {
                               alt: "Unsplashed background img 3",
                               src: "/assets/img/background3.jpg"
-                            }))), React.createElement("footer", {
-                      className: "page-footer teal"
-                    }, React.createElement("div", {
-                          className: "container"
-                        }, React.createElement("div", {
-                              className: "row"
-                            }, React.createElement("div", {
-                                  className: "col l6 s12"
-                                }, React.createElement("h5", {
-                                      className: "white-text"
-                                    }, "Company Bio"), React.createElement("p", {
-                                      className: "grey-text text-lighten-4"
-                                    }, "We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.")), React.createElement("div", {
-                                  className: "col l3 s12"
-                                }, React.createElement("h5", {
-                                      className: "white-text"
-                                    }, "Settings"), React.createElement("ul", undefined, React.createElement("li", undefined, React.createElement("a", {
-                                              className: "white-text",
-                                              href: "#!"
-                                            }, "Link 1")), React.createElement("li", undefined, React.createElement("a", {
-                                              className: "white-text",
-                                              href: "#!"
-                                            }, "Link 2")), React.createElement("li", undefined, React.createElement("a", {
-                                              className: "white-text",
-                                              href: "#!"
-                                            }, "Link 3")), React.createElement("li", undefined, React.createElement("a", {
-                                              className: "white-text",
-                                              href: "#!"
-                                            }, "Link 4")))), React.createElement("div", {
-                                  className: "col l3 s12"
-                                }, React.createElement("h5", {
-                                      className: "white-text"
-                                    }, "Connect"), React.createElement("ul", undefined, React.createElement("li", undefined, React.createElement("a", {
-                                              className: "white-text",
-                                              href: "#!"
-                                            }, "Link 1")), React.createElement("li", undefined, React.createElement("a", {
-                                              className: "white-text",
-                                              href: "#!"
-                                            }, "Link 2")), React.createElement("li", undefined, React.createElement("a", {
-                                              className: "white-text",
-                                              href: "#!"
-                                            }, "Link 3")), React.createElement("li", undefined, React.createElement("a", {
-                                              className: "white-text",
-                                              href: "#!"
-                                            }, "Link 4")))))), React.createElement("div", {
-                          className: "footer-copyright"
-                        }, React.createElement("div", {
-                              className: "container"
-                            }, "Made by ", React.createElement("a", {
-                                  className: "brown-text text-lighten-3",
-                                  href: "http://materializecss.com"
-                                }, "Materialize")))));
+                            }))), Footer$ReactTemplate.render);
     });
   return newrecord;
 }
 
 exports.component = component;
 exports.show = show;
-exports.handleClick = handleClick;
+exports.summary = summary;
+exports.about = about;
+exports.contact = contact;
 exports.make = make;
 /* component Not a pure module */
 
@@ -31249,6 +31163,135 @@ Router.prototype.mount = function(routes, path) {
 
 
 }( true ? exports : window));
+
+/***/ }),
+/* 209 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+// Generated by BUCKLESCRIPT VERSION 2.2.0, PLEASE EDIT WITH CARE
+
+
+var React = __webpack_require__(53);
+
+function show(prim) {
+  return prim;
+}
+
+var render = React.createElement("footer", {
+      className: "page-footer teal"
+    }, React.createElement("div", {
+          className: "container"
+        }, React.createElement("div", {
+              className: "row"
+            }, React.createElement("div", {
+                  className: "col l6 s12"
+                }, React.createElement("h5", {
+                      className: "white-text"
+                    }, "Company Bio"), React.createElement("p", {
+                      className: "grey-text text-lighten-4"
+                    }, "We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.")), React.createElement("div", {
+                  className: "col l3 s12"
+                }, React.createElement("h5", {
+                      className: "white-text"
+                    }, "Settings"), React.createElement("ul", undefined, React.createElement("li", undefined, React.createElement("a", {
+                              className: "white-text",
+                              href: "#!"
+                            }, "Link 1")), React.createElement("li", undefined, React.createElement("a", {
+                              className: "white-text",
+                              href: "#!"
+                            }, "Link 2")), React.createElement("li", undefined, React.createElement("a", {
+                              className: "white-text",
+                              href: "#!"
+                            }, "Link 3")), React.createElement("li", undefined, React.createElement("a", {
+                              className: "white-text",
+                              href: "#!"
+                            }, "Link 4")))), React.createElement("div", {
+                  className: "col l3 s12"
+                }, React.createElement("h5", {
+                      className: "white-text"
+                    }, "Connect"), React.createElement("ul", undefined, React.createElement("li", undefined, React.createElement("a", {
+                              className: "white-text",
+                              href: "#!"
+                            }, "Link 1")), React.createElement("li", undefined, React.createElement("a", {
+                              className: "white-text",
+                              href: "#!"
+                            }, "Link 2")), React.createElement("li", undefined, React.createElement("a", {
+                              className: "white-text",
+                              href: "#!"
+                            }, "Link 3")), React.createElement("li", undefined, React.createElement("a", {
+                              className: "white-text",
+                              href: "#!"
+                            }, "Link 4")))))), React.createElement("div", {
+          className: "footer-copyright"
+        }, React.createElement("div", {
+              className: "container"
+            }, "Made with ", React.createElement("a", {
+                  className: "brown-text text-lighten-3",
+                  href: "http://materializecss.com"
+                }, "Materialize"))));
+
+exports.show = show;
+exports.render = render;
+/* render Not a pure module */
+
+
+/***/ }),
+/* 210 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+// Generated by BUCKLESCRIPT VERSION 2.2.0, PLEASE EDIT WITH CARE
+
+
+var React = __webpack_require__(53);
+
+function show(prim) {
+  return prim;
+}
+
+var dataActivates = React.cloneElement(React.createElement("a", {
+          className: "button-collapse",
+          href: "#"
+        }, React.createElement("i", {
+              className: "material-icons"
+            }, "menu")), {
+      "data-activates": "nav-mobile"
+    });
+
+function navbarLink(text, href) {
+  return /* array */[
+          React.createElement("ul", {
+                className: "right hide-on-med-and-down"
+              }, React.createElement("li", undefined, React.createElement("a", {
+                        href: href
+                      }, text))),
+          React.createElement("ul", {
+                className: "side-nav",
+                id: "nav-mobile"
+              }, React.createElement("li", undefined, React.createElement("a", {
+                        href: href
+                      }, text)))
+        ];
+}
+
+var render = React.createElement("nav", {
+      className: "white",
+      role: "navigation"
+    }, React.createElement("div", {
+          className: "nav-wrapper container"
+        }, React.createElement("a", {
+              className: "dark-font",
+              id: "logo-container",
+              href: "#"
+            }, "Steven Thomas"), navbarLink("Hello!", "#"), dataActivates));
+
+exports.show = show;
+exports.dataActivates = dataActivates;
+exports.navbarLink = navbarLink;
+exports.render = render;
+/* dataActivates Not a pure module */
+
 
 /***/ })
 /******/ ]);
