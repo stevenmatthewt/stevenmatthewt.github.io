@@ -1,0 +1,2 @@
+type routes = 
+  | Home

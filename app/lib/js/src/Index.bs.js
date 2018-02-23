@@ -3,8 +3,18 @@
 
 var ReactDOMRe = require("reason-react/lib/js/src/ReactDOMRe.js");
 var ReasonReact = require("reason-react/lib/js/src/ReasonReact.js");
-var Page$ReactTemplate = require("./Page.bs.js");
+var Home$ReactTemplate = require("./Home.bs.js");
+var Director = require("director/build/director");
 
-ReactDOMRe.renderToElementWithId(ReasonReact.element(/* None */0, /* None */0, Page$ReactTemplate.make("Hello!", /* array */[])), "index");
+var router = new Director.Router({
+      "/": ReactDOMRe.renderToElementWithId(ReasonReact.element(/* None */0, /* None */0, Home$ReactTemplate.make(/* array */[])), "index")
+    });
 
-/*  Not a pure module */
+router.configure({
+      html5history: /* true */1
+    });
+
+router.init("/");
+
+exports.router = router;
+/* router Not a pure module */
