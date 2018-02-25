@@ -30320,6 +30320,29 @@ function show(prim) {
   return prim;
 }
 
+function bold(text) {
+  return React.createElement("span", {
+              className: "bold"
+            }, text);
+}
+
+var negTopMargin = {
+  marginTop: "-0.8em"
+};
+
+function link(text, href) {
+  return React.createElement("a", {
+              href: href
+            }, text);
+}
+
+function $plus$plus$plus(a, b) {
+  return /* array */[
+          a,
+          b
+        ];
+}
+
 var summary = React.createElement("div", {
       className: "parallax-container",
       id: "index-banner"
@@ -30359,7 +30382,25 @@ var about = React.createElement("div", {
                           className: "center"
                         }, "About me"), React.createElement("p", {
                           className: "light"
-                        }, "We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers."))), React.createElement("div", {
+                        }, "I'm a software engineer with a passion for creating reliable, robust, and responsive services. I'm a fairly recent graduate of the Georgia Institute of Technology (December 2016), but that doesn't mean I'm done learning. Whether through my career, or personal projects, I hope to learn new technologies and make some new things too (and probably show them off here)."), React.createElement("span", {
+                          className: "light"
+                        }, "Things I like:"), React.createElement("ul", {
+                          className: "light browser-default"
+                        }, React.createElement("li", {
+                              style: negTopMargin
+                            }, "Statically typed languages"), React.createElement("li", undefined, "Opinionated programming"), React.createElement("li", undefined, "Getting up early"), React.createElement("li", undefined, "Coffee")), React.createElement("span", {
+                          className: "light"
+                        }, /* array */[
+                          "Things I ",
+                          /* array */[
+                            bold("don't"),
+                            " like:"
+                          ]
+                        ]), React.createElement("ul", {
+                          className: "light browser-default"
+                        }, React.createElement("li", {
+                              style: negTopMargin
+                            }, "Html/javascript (you can probably tell)"), React.createElement("li", undefined, "Tomatoes. Just nope.")))), React.createElement("div", {
                   className: "col s12 m6"
                 }, React.createElement("div", {
                       className: "icon-block"
@@ -30371,7 +30412,14 @@ var about = React.createElement("div", {
                           className: "center"
                         }, "About this site"), React.createElement("p", {
                           className: "light"
-                        }, "By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience."))))));
+                        }, "This site serves two purposes. First, it's a place for me to showcase my most significant work. There's rather little of that at the moment, but I'll be adding anything interesting as I work on it."), React.createElement("p", {
+                          className: "light"
+                        }, "Second, and perhaps more importantly, it's an opportunity for me to experiment with frontend design. The vast majority of my professional experience consists of backend or systems engineering. Regardless, I want to expand my knowledge of frontend design as much as possible in my free time. So I'm using this website for exactly that purpose."), React.createElement("p", {
+                          className: "light"
+                        }, /* array */[
+                          "This site is built using ReasonML and React. You can find the source code on ",
+                          link("GitHub", "https://github.com/stevenmatthewt/stevenmatthewt.github.io")
+                        ]))))));
 
 var contact = React.createElement("div", {
       className: "container"
@@ -30427,6 +30475,10 @@ function make() {
 
 exports.component = component;
 exports.show = show;
+exports.bold = bold;
+exports.negTopMargin = negTopMargin;
+exports.link = link;
+exports.$plus$plus$plus = $plus$plus$plus;
 exports.summary = summary;
 exports.about = about;
 exports.contact = contact;

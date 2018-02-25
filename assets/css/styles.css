@@ -11,6 +11,10 @@ nav .dark-font {
   color: #444;
 }
 
+.bold {
+  font-weight:500;
+}
+
 p {
   line-height: 2rem;
 }
@@ -25,9 +29,9 @@ p {
   height: auto;
   color: rgba(255,255,255,.9);
 }
-  .parallax-container .section {
-    width: 100%;
-  }
+.parallax-container .section {
+width: 100%;
+}
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {

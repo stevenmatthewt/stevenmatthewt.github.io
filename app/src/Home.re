@@ -2,6 +2,18 @@
 let component = ReasonReact.statelessComponent("Page");
 
 let show = ReasonReact.stringToElement;
+let bold = (text) => {
+  <span className="bold">(show(text))</span>
+};
+let negTopMargin = ReactDOMRe.Style.make(~marginTop="-0.8em", ());
+
+let link = (text, href) => {
+  <a href=(href)>(show(text))</a>
+};
+
+let (+++) = (a, b) => {
+  ReasonReact.arrayToElement([|a, b|])
+};
 
 let summary = {
   <div id="index-banner" className="parallax-container">
@@ -34,7 +46,19 @@ let about = {
             </h2>
             <h5 className="center">(show("About me"))</h5>
 
-            <p className="light">(show("We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers."))</p>
+            <p className="light">(show("I'm a software engineer with a passion for creating reliable, robust, and responsive services. I'm a fairly recent graduate of the Georgia Institute of Technology (December 2016), but that doesn't mean I'm done learning. Whether through my career, or personal projects, I hope to learn new technologies and make some new things too (and probably show them off here)."))</p>
+            <span className="light">(show("Things I like:"))</span>
+            <ul className="light browser-default">
+              <li style=(negTopMargin)>(show("Statically typed languages"))</li>
+              <li>(show("Opinionated programming"))</li>
+              <li>(show("Getting up early"))</li>
+              <li>(show("Coffee"))</li>
+            </ul>
+            <span className="light">(show("Things I ") +++ bold("don't") +++ show(" like:"))</span>
+            <ul className="light browser-default">
+              <li style=(negTopMargin)>(show("Html/javascript (you can probably tell)"))</li>
+              <li>(show("Tomatoes. Just nope."))</li>
+            </ul>
           </div>
         </div>
 
@@ -45,7 +69,9 @@ let about = {
             </h2>
             <h5 className="center">(show("About this site"))</h5>
 
-            <p className="light">(show("By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience."))</p>
+            <p className="light">(show("This site serves two purposes. First, it's a place for me to showcase my most significant work. There's rather little of that at the moment, but I'll be adding anything interesting as I work on it."))</p>
+            <p className="light">(show("Second, and perhaps more importantly, it's an opportunity for me to experiment with frontend design. The vast majority of my professional experience consists of backend or systems engineering. Regardless, I want to expand my knowledge of frontend design as much as possible in my free time. So I'm using this website for exactly that purpose."))</p>
+            <p className="light">(show("This site is built using ReasonML and React. You can find the source code on ") +++ link("GitHub", "https://github.com/stevenmatthewt/stevenmatthewt.github.io"))</p>
           </div>
         </div>
       </div>
