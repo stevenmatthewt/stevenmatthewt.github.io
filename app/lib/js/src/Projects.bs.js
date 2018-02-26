@@ -24,6 +24,8 @@ var dotfiles = card("Dotfiles", "My personal dotfiles used to setup my computers
 
 var template = card("Tmpl", "A Golang CLI tool to generate projects based off of templates.", Shared$ReactTemplate.link("Find it on GitHub", "https://github.com/stevenmatthewt/template"));
 
+var inquiry = card("Inquiry", "A Golang library to facilitate marshalling/unmarshalling query string parameters in Golang APIs.", Shared$ReactTemplate.link("Find it on GitHub", "https://github.com/stevenmatthewt/inquiry"));
+
 var show = Shared$ReactTemplate.show;
 
 var bold = Shared$ReactTemplate.bold;
@@ -44,4 +46,5 @@ exports.semantics = semantics;
 exports.concur = concur;
 exports.dotfiles = dotfiles;
 exports.template = template;
+exports.inquiry = inquiry;
 /* semantics Not a pure module */

@@ -39,3 +39,10 @@ let template = {
         link("Find it on GitHub", "https://github.com/stevenmatthewt/template")
     )
 };
+
+let inquiry = {
+    card("Inquiry",
+        "A Golang library to facilitate marshalling/unmarshalling query string parameters in Golang APIs.",
+        link("Find it on GitHub", "https://github.com/stevenmatthewt/inquiry")
+    )
+};

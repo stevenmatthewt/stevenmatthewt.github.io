@@ -9,14 +9,14 @@ let summary = {
       <div className="container">
         <br />
         /* Insert circle image here! */
-        <h1 className="header center text-lighten-2">(show("Steven Thomas"))</h1>
+        <h1 className="header center">(show("Steven Thomas"))</h1>
         <div className="row center">
-          <h5 className="header col s12 light">(show("Graduate of Georgia Institute of Technology. Golang Enthusiast."))</h5>
+          <h5 className="header col s12">(show("Graduate of Georgia Institute of Technology. Golang Enthusiast."))</h5>
         </div>
       </div>
     </div>
     <div className="parallax">
-      <img src="/assets/img/background1.png" alt="Unsplashed background img 1"/>
+      <img src="/assets/img/background1.jpeg" alt="Unsplashed background img 1"/>
     </div>
   </div>
 };
@@ -29,7 +29,7 @@ let about = {
       <div className="row">
         <div className="col s12 m6">
           <div className="icon-block">
-            <h2 className="center brown-text">
+            <h2 className="center blue-text">
               <i className="material-icons">(show("account_circle"))</i>
             </h2>
             <h5 className="center">(show("About me"))</h5>
@@ -52,7 +52,7 @@ let about = {
 
         <div className="col s12 m6">
           <div className="icon-block">
-            <h2 className="center brown-text">
+            <h2 className="center blue-text">
               <i className="material-icons">(show("web"))</i>
             </h2>
             <h5 className="center">(show("About this site"))</h5>
@@ -75,7 +75,7 @@ let projects = {
       <div className="row">
         <div className="col s12 center">
           <h3>
-            <i className="mdi-content-send brown-text"></i>
+            <i className="mdi-content-send blue-text"></i>
           </h3>
           <h4>(show("Projects"))</h4>
         </div>
@@ -84,6 +84,7 @@ let projects = {
         <div className="col s12 m6 cards-container">
           {Projects.semantics}
           {Projects.concur}
+          {Projects.inquiry}
         </div>
         <div className="col s12 m6 cards-container">
           {Projects.template}
@@ -114,12 +115,12 @@ let make = (_children) => {
     <div className="section no-pad-bot">
       <div className="container">
         <div className="row center">
-          /* <h5 className="header col s12 light">(show("A modern responsive front-end framework based on Material Design"))</h5> */
+          <h2 className="header col s12">(show("Projects"))</h2>
         </div>
       </div>
     </div>
     <div className="parallax">
-      <img src="/assets/img/background2.jpg" alt="Unsplashed background img 2"/>
+      <img src="/assets/img/background2.jpeg" alt="Unsplashed background img 2"/>
     </div>
   </div>
 
@@ -129,7 +130,7 @@ let make = (_children) => {
     <div className="section no-pad-bot">
       <div className="container">
         <div className="row center">
-          /* <h5 className="header col s12 light">(show("A modern responsive front-end framework based on Material Design"))</h5> */
+          <h4 className="header col s12">(show("I like cooking, so here's a random onion. No need to thank me."))</h4>
         </div>
       </div>
     </div>

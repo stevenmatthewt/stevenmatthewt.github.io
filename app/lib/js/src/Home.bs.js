@@ -18,16 +18,16 @@ var summary = React.createElement("div", {
         }, React.createElement("div", {
               className: "container"
             }, React.createElement("br", undefined), React.createElement("h1", {
-                  className: "header center text-lighten-2"
+                  className: "header center"
                 }, Shared$ReactTemplate.show("Steven Thomas")), React.createElement("div", {
                   className: "row center"
                 }, React.createElement("h5", {
-                      className: "header col s12 light"
+                      className: "header col s12"
                     }, Shared$ReactTemplate.show("Graduate of Georgia Institute of Technology. Golang Enthusiast."))))), React.createElement("div", {
           className: "parallax"
         }, React.createElement("img", {
               alt: "Unsplashed background img 1",
-              src: "/assets/img/background1.png"
+              src: "/assets/img/background1.jpeg"
             })));
 
 var about = React.createElement("div", {
@@ -42,7 +42,7 @@ var about = React.createElement("div", {
                 }, React.createElement("div", {
                       className: "icon-block"
                     }, React.createElement("h2", {
-                          className: "center brown-text"
+                          className: "center blue-text"
                         }, React.createElement("i", {
                               className: "material-icons"
                             }, Shared$ReactTemplate.show("account_circle"))), React.createElement("h5", {
@@ -66,7 +66,7 @@ var about = React.createElement("div", {
                 }, React.createElement("div", {
                       className: "icon-block"
                     }, React.createElement("h2", {
-                          className: "center brown-text"
+                          className: "center blue-text"
                         }, React.createElement("i", {
                               className: "material-icons"
                             }, Shared$ReactTemplate.show("web"))), React.createElement("h5", {
@@ -89,12 +89,12 @@ var projects = React.createElement("div", {
             }, React.createElement("div", {
                   className: "col s12 center"
                 }, React.createElement("h3", undefined, React.createElement("i", {
-                          className: "mdi-content-send brown-text"
+                          className: "mdi-content-send blue-text"
                         })), React.createElement("h4", undefined, Shared$ReactTemplate.show("Projects")))), React.createElement("div", {
               className: "row"
             }, React.createElement("div", {
                   className: "col s12 m6 cards-container"
-                }, Projects$ReactTemplate.semantics, Projects$ReactTemplate.concur), React.createElement("div", {
+                }, Projects$ReactTemplate.semantics, Projects$ReactTemplate.concur, Projects$ReactTemplate.inquiry), React.createElement("div", {
                   className: "col s12 m6 cards-container"
                 }, Projects$ReactTemplate.template, Projects$ReactTemplate.dotfiles))));
 
@@ -109,11 +109,13 @@ function make() {
                               className: "container"
                             }, React.createElement("div", {
                                   className: "row center"
-                                }))), React.createElement("div", {
+                                }, React.createElement("h2", {
+                                      className: "header col s12"
+                                    }, Shared$ReactTemplate.show("Projects"))))), React.createElement("div", {
                           className: "parallax"
                         }, React.createElement("img", {
                               alt: "Unsplashed background img 2",
-                              src: "/assets/img/background2.jpg"
+                              src: "/assets/img/background2.jpeg"
                             }))), projects, React.createElement("div", {
                       className: "parallax-container valign-wrapper"
                     }, React.createElement("div", {
@@ -122,7 +124,9 @@ function make() {
                               className: "container"
                             }, React.createElement("div", {
                                   className: "row center"
-                                }))), React.createElement("div", {
+                                }, React.createElement("h4", {
+                                      className: "header col s12"
+                                    }, Shared$ReactTemplate.show("I like cooking, so here's a random onion. No need to thank me."))))), React.createElement("div", {
                           className: "parallax"
                         }, React.createElement("img", {
                               alt: "Unsplashed background img 3",
