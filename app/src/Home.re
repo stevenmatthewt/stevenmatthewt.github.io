@@ -16,7 +16,7 @@ let summary = {
       </div>
     </div>
     <div className="parallax">
-      <img src="/assets/img/background1.jpg" alt="Unsplashed background img 1"/>
+      <img src="/assets/img/background1.png" alt="Unsplashed background img 1"/>
     </div>
   </div>
 };
@@ -40,7 +40,7 @@ let about = {
               <li style=(negTopMargin)>(show("Statically typed languages"))</li>
               <li>(show("Opinionated programming"))</li>
               <li>(show("Getting up early"))</li>
-              <li>(show("Coffee"))</li>
+              <li>(show("Cooking"))</li>
             </ul>
             <span className="light">(show("Things I ") +++ bold("don't") +++ show(" like:"))</span>
             <ul className="light browser-default">

@@ -30335,7 +30335,7 @@ var summary = React.createElement("div", {
           className: "parallax"
         }, React.createElement("img", {
               alt: "Unsplashed background img 1",
-              src: "/assets/img/background1.jpg"
+              src: "/assets/img/background1.png"
             })));
 
 var about = React.createElement("div", {
@@ -30363,7 +30363,7 @@ var about = React.createElement("div", {
                           className: "light browser-default"
                         }, React.createElement("li", {
                               style: Shared$ReactTemplate.negTopMargin
-                            }, Shared$ReactTemplate.show("Statically typed languages")), React.createElement("li", undefined, Shared$ReactTemplate.show("Opinionated programming")), React.createElement("li", undefined, Shared$ReactTemplate.show("Getting up early")), React.createElement("li", undefined, Shared$ReactTemplate.show("Coffee"))), React.createElement("span", {
+                            }, Shared$ReactTemplate.show("Statically typed languages")), React.createElement("li", undefined, Shared$ReactTemplate.show("Opinionated programming")), React.createElement("li", undefined, Shared$ReactTemplate.show("Getting up early")), React.createElement("li", undefined, Shared$ReactTemplate.show("Cooking"))), React.createElement("span", {
                           className: "light"
                         }, Shared$ReactTemplate.$plus$plus$plus(Shared$ReactTemplate.show("Things I "), Shared$ReactTemplate.$plus$plus$plus(Shared$ReactTemplate.bold("don't"), Shared$ReactTemplate.show(" like:")))), React.createElement("ul", {
                           className: "light browser-default"
