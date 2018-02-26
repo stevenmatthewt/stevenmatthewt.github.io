@@ -15,8 +15,12 @@ nav .dark-font {
   font-weight:500;
 }
 
+.card a{
+    color: white;
+}
+
 .button-collapse {
-  color: #26a69a;
+  color: #2196F3;
 }
 
 .parallax-container {

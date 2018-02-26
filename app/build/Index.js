@@ -30401,10 +30401,10 @@ var projects = React.createElement("div", {
                         })), React.createElement("h4", undefined, Shared$ReactTemplate.show("Projects")))), React.createElement("div", {
               className: "row"
             }, React.createElement("div", {
-                  className: "col s12 m6"
-                }, Projects$ReactTemplate.semantics), React.createElement("div", {
-                  className: "col s12 m6"
-                }, Projects$ReactTemplate.concur))));
+                  className: "col s12 m6 cards-container"
+                }, Projects$ReactTemplate.semantics, Projects$ReactTemplate.concur), React.createElement("div", {
+                  className: "col s12 m6 cards-container"
+                }, Projects$ReactTemplate.template, Projects$ReactTemplate.dotfiles))));
 
 function make() {
   var newrecord = component.slice();
@@ -31208,7 +31208,7 @@ function show(prim) {
 }
 
 var render = React.createElement("footer", {
-      className: "page-footer teal"
+      className: "page-footer blue"
     }, React.createElement("div", {
           className: "container"
         }, React.createElement("div", {
@@ -31354,21 +31354,25 @@ exports.$plus$plus$plus = $plus$plus$plus;
 var React = __webpack_require__(53);
 var Shared$ReactTemplate = __webpack_require__(211);
 
-var semantics = React.createElement("div", {
-      className: "card teal"
-    }, React.createElement("div", {
-          className: "card-content white-text"
-        }, React.createElement("h5", undefined, Shared$ReactTemplate.show("Semantics")), React.createElement("p", {
-              className: "light"
-            }, Shared$ReactTemplate.show("This will be project 1"))));
+function card(title, description, link) {
+  return React.createElement("div", {
+              className: "card blue-grey"
+            }, React.createElement("div", {
+                  className: "card-content white-text"
+                }, React.createElement("h5", undefined, Shared$ReactTemplate.show(title)), React.createElement("p", {
+                      className: "light"
+                    }, Shared$ReactTemplate.show(description))), React.createElement("div", {
+                  className: "card-action"
+                }, link));
+}
 
-var concur = React.createElement("div", {
-      className: "card teal"
-    }, React.createElement("div", {
-          className: "card-content white-text"
-        }, React.createElement("h5", undefined, Shared$ReactTemplate.show("Concur")), React.createElement("p", {
-              className: "light"
-            }, Shared$ReactTemplate.show("This will be project 2"))));
+var semantics = card("Semantics", "A CLI tool built using Golang to automatically manage semantic versioning of projects.", Shared$ReactTemplate.link("Find it on GitHub", "https://github.com/stevenmatthewt/semantics"));
+
+var concur = card("Concur", "A Golang package to facilitate with Go concurrency.", Shared$ReactTemplate.link("Find it on GitHub", "https://github.com/stevenmatthewt/concur"));
+
+var dotfiles = card("Dotfiles", "My personal dotfiles used to setup my computers.", Shared$ReactTemplate.link("Find it on GitHub", "https://github.com/stevenmatthewt/dotfiles"));
+
+var template = card("Tmpl", "A Golang CLI tool to generate projects based off of templates.", Shared$ReactTemplate.link("Find it on GitHub", "https://github.com/stevenmatthewt/template"));
 
 var show = Shared$ReactTemplate.show;
 
@@ -31385,8 +31389,11 @@ exports.bold = bold;
 exports.negTopMargin = negTopMargin;
 exports.link = link;
 exports.$plus$plus$plus = $plus$plus$plus;
+exports.card = card;
 exports.semantics = semantics;
 exports.concur = concur;
+exports.dotfiles = dotfiles;
+exports.template = template;
 /* semantics Not a pure module */
 
 

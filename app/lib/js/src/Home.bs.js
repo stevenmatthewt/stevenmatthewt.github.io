@@ -93,10 +93,10 @@ var projects = React.createElement("div", {
                         })), React.createElement("h4", undefined, Shared$ReactTemplate.show("Projects")))), React.createElement("div", {
               className: "row"
             }, React.createElement("div", {
-                  className: "col s12 m6"
-                }, Projects$ReactTemplate.semantics), React.createElement("div", {
-                  className: "col s12 m6"
-                }, Projects$ReactTemplate.concur))));
+                  className: "col s12 m6 cards-container"
+                }, Projects$ReactTemplate.semantics, Projects$ReactTemplate.concur), React.createElement("div", {
+                  className: "col s12 m6 cards-container"
+                }, Projects$ReactTemplate.template, Projects$ReactTemplate.dotfiles))));
 
 function make() {
   var newrecord = component.slice();

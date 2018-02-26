@@ -8,7 +8,7 @@ function show(prim) {
 }
 
 var render = React.createElement("footer", {
-      className: "page-footer teal"
+      className: "page-footer blue"
     }, React.createElement("div", {
           className: "container"
         }, React.createElement("div", {

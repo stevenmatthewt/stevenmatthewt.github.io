@@ -1,7 +1,7 @@
 let show = ReasonReact.stringToElement;
 
 let render = {
-    <footer className="page-footer teal">
+    <footer className="page-footer blue">
         <div className="container">
         <div className="row">
             <h5 className="white-text">(show("Find me on:"))</h5>

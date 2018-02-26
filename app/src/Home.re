@@ -81,11 +81,13 @@ let projects = {
         </div>
       </div>
       <div className="row">
-        <div className="col s12 m6">
+        <div className="col s12 m6 cards-container">
           {Projects.semantics}
-        </div>
-        <div className="col s12 m6">
           {Projects.concur}
+        </div>
+        <div className="col s12 m6 cards-container">
+          {Projects.template}
+          {Projects.dotfiles}
         </div>
       </div>
     </div>
