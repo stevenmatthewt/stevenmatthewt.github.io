@@ -13,45 +13,15 @@ var render = React.createElement("footer", {
           className: "container"
         }, React.createElement("div", {
               className: "row"
-            }, React.createElement("div", {
-                  className: "col l6 s12"
-                }, React.createElement("h5", {
-                      className: "white-text"
-                    }, "Company Bio"), React.createElement("p", {
-                      className: "grey-text text-lighten-4"
-                    }, "We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.")), React.createElement("div", {
-                  className: "col l3 s12"
-                }, React.createElement("h5", {
-                      className: "white-text"
-                    }, "Settings"), React.createElement("ul", undefined, React.createElement("li", undefined, React.createElement("a", {
-                              className: "white-text",
-                              href: "#!"
-                            }, "Link 1")), React.createElement("li", undefined, React.createElement("a", {
-                              className: "white-text",
-                              href: "#!"
-                            }, "Link 2")), React.createElement("li", undefined, React.createElement("a", {
-                              className: "white-text",
-                              href: "#!"
-                            }, "Link 3")), React.createElement("li", undefined, React.createElement("a", {
-                              className: "white-text",
-                              href: "#!"
-                            }, "Link 4")))), React.createElement("div", {
-                  className: "col l3 s12"
-                }, React.createElement("h5", {
-                      className: "white-text"
-                    }, "Connect"), React.createElement("ul", undefined, React.createElement("li", undefined, React.createElement("a", {
-                              className: "white-text",
-                              href: "#!"
-                            }, "Link 1")), React.createElement("li", undefined, React.createElement("a", {
-                              className: "white-text",
-                              href: "#!"
-                            }, "Link 2")), React.createElement("li", undefined, React.createElement("a", {
-                              className: "white-text",
-                              href: "#!"
-                            }, "Link 3")), React.createElement("li", undefined, React.createElement("a", {
-                              className: "white-text",
-                              href: "#!"
-                            }, "Link 4")))))), React.createElement("div", {
+            }, React.createElement("h5", {
+                  className: "white-text"
+                }, "Find me on:"), React.createElement("ul", undefined, React.createElement("li", undefined, React.createElement("a", {
+                          className: "white-text",
+                          href: "https://github.com/stevenmatthewt"
+                        }, "GitHub")), React.createElement("li", undefined, React.createElement("a", {
+                          className: "white-text",
+                          href: "https://www.linkedin.com/in/steven-thomas-4a16458a/"
+                        }, "LinkedIn"))))), React.createElement("div", {
           className: "footer-copyright"
         }, React.createElement("div", {
               className: "container"

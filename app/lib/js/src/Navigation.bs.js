@@ -16,20 +16,22 @@ var dataActivates = React.cloneElement(React.createElement("a", {
       "data-activates": "nav-mobile"
     });
 
-function navbarLink(text, href) {
+function navbarLinks(elements) {
   return /* array */[
           React.createElement("ul", {
                 className: "right hide-on-med-and-down"
-              }, React.createElement("li", undefined, React.createElement("a", {
-                        href: href
-                      }, text))),
+              }, elements),
           React.createElement("ul", {
                 className: "side-nav",
                 id: "nav-mobile"
-              }, React.createElement("li", undefined, React.createElement("a", {
-                        href: href
-                      }, text)))
+              }, elements)
         ];
+}
+
+function navbarLink(text, href) {
+  return React.createElement("li", undefined, React.createElement("a", {
+                  href: href
+                }, text));
 }
 
 var render = React.createElement("nav", {
@@ -41,10 +43,14 @@ var render = React.createElement("nav", {
               className: "dark-font",
               id: "logo-container",
               href: "#"
-            }, "Steven Thomas"), navbarLink("Hello!", "#"), dataActivates));
+            }, "Steven Thomas"), navbarLinks(/* array */[
+              navbarLink("About", "#about"),
+              navbarLink("Projects", "#projects")
+            ]), dataActivates));
 
 exports.show = show;
 exports.dataActivates = dataActivates;
+exports.navbarLinks = navbarLinks;
 exports.navbarLink = navbarLink;
 exports.render = render;
 /* dataActivates Not a pure module */

@@ -9,25 +9,27 @@ let dataActivates = {
         [||]
     );
 };
-  
-let navbarLink = (text, href) => {
+
+let navbarLinks = (elements) => {
     [| <ul className="right hide-on-med-and-down">
-        <li>
-        <a href=(href)>(show(text))</a>
-        </li>
+        {elements |> ReasonReact.arrayToElement}
     </ul>,
     <ul id="nav-mobile" className="side-nav">
-        <li>
-        <a href=(href)>(show(text))</a>
-        </li>
+        {elements |> ReasonReact.arrayToElement}
     </ul> |] |> ReasonReact.arrayToElement
+};
+  
+let navbarLink = (text, href) => {
+    <li>
+    <a href=(href)>(show(text))</a>
+    </li>
 };
   
 let render = {
     <nav className="white" role="navigation">
         <div className="nav-wrapper container">
         <a id="logo-container" href="#" className="dark-font">(show("Steven Thomas"))</a>
-        {navbarLink("Hello!", "#")}
+        {navbarLinks([|navbarLink("About", "#about"), navbarLink("Projects", "#projects")|])}
         {dataActivates} /* data-activates="nav-mobile" */
         </div>
     </nav>

@@ -1,19 +1,7 @@
+include Shared;
+
 /* This is the basic component. */
 let component = ReasonReact.statelessComponent("Page");
-
-let show = ReasonReact.stringToElement;
-let bold = (text) => {
-  <span className="bold">(show(text))</span>
-};
-let negTopMargin = ReactDOMRe.Style.make(~marginTop="-0.8em", ());
-
-let link = (text, href) => {
-  <a href=(href)>(show(text))</a>
-};
-
-let (+++) = (a, b) => {
-  ReasonReact.arrayToElement([|a, b|])
-};
 
 let summary = {
   <div id="index-banner" className="parallax-container">
@@ -80,8 +68,8 @@ let about = {
   </div>
 };
 
-let contact = {
-  <div className="container">
+let projects = {
+  <div id="projects" className="container">
     <div className="section">
 
       <div className="row">
@@ -89,11 +77,17 @@ let contact = {
           <h3>
             <i className="mdi-content-send brown-text"></i>
           </h3>
-          <h4>(show("Contact Us"))</h4>
-          <p className="left-align light">(show("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;"))</p>
+          <h4>(show("Projects"))</h4>
         </div>
       </div>
-
+      <div className="row">
+        <div className="col s12 m6">
+          {Projects.semantics}
+        </div>
+        <div className="col s12 m6">
+          {Projects.concur}
+        </div>
+      </div>
     </div>
   </div>
 };
@@ -118,7 +112,7 @@ let make = (_children) => {
     <div className="section no-pad-bot">
       <div className="container">
         <div className="row center">
-          <h5 className="header col s12 light">(show("A modern responsive front-end framework based on Material Design"))</h5>
+          /* <h5 className="header col s12 light">(show("A modern responsive front-end framework based on Material Design"))</h5> */
         </div>
       </div>
     </div>
@@ -127,13 +121,13 @@ let make = (_children) => {
     </div>
   </div>
 
-  {contact}
+  {projects}
 
   <div className="parallax-container valign-wrapper">
     <div className="section no-pad-bot">
       <div className="container">
         <div className="row center">
-          <h5 className="header col s12 light">(show("A modern responsive front-end framework based on Material Design"))</h5>
+          /* <h5 className="header col s12 light">(show("A modern responsive front-end framework based on Material Design"))</h5> */
         </div>
       </div>
     </div>

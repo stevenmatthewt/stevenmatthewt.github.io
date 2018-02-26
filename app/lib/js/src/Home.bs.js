@@ -4,36 +4,11 @@
 var React = require("react");
 var ReasonReact = require("reason-react/lib/js/src/ReasonReact.js");
 var Footer$ReactTemplate = require("./Footer.bs.js");
+var Shared$ReactTemplate = require("./Shared.bs.js");
+var Projects$ReactTemplate = require("./Projects.bs.js");
 var Navigation$ReactTemplate = require("./Navigation.bs.js");
 
 var component = ReasonReact.statelessComponent("Page");
-
-function show(prim) {
-  return prim;
-}
-
-function bold(text) {
-  return React.createElement("span", {
-              className: "bold"
-            }, text);
-}
-
-var negTopMargin = {
-  marginTop: "-0.8em"
-};
-
-function link(text, href) {
-  return React.createElement("a", {
-              href: href
-            }, text);
-}
-
-function $plus$plus$plus(a, b) {
-  return /* array */[
-          a,
-          b
-        ];
-}
 
 var summary = React.createElement("div", {
       className: "parallax-container",
@@ -44,11 +19,11 @@ var summary = React.createElement("div", {
               className: "container"
             }, React.createElement("br", undefined), React.createElement("h1", {
                   className: "header center text-lighten-2"
-                }, "Steven Thomas"), React.createElement("div", {
+                }, Shared$ReactTemplate.show("Steven Thomas")), React.createElement("div", {
                   className: "row center"
                 }, React.createElement("h5", {
                       className: "header col s12 light"
-                    }, "Graduate of Georgia Institute of Technology. Golang Enthusiast.")))), React.createElement("div", {
+                    }, Shared$ReactTemplate.show("Graduate of Georgia Institute of Technology. Golang Enthusiast."))))), React.createElement("div", {
           className: "parallax"
         }, React.createElement("img", {
               alt: "Unsplashed background img 1",
@@ -70,29 +45,23 @@ var about = React.createElement("div", {
                           className: "center brown-text"
                         }, React.createElement("i", {
                               className: "material-icons"
-                            }, "account_circle")), React.createElement("h5", {
+                            }, Shared$ReactTemplate.show("account_circle"))), React.createElement("h5", {
                           className: "center"
-                        }, "About me"), React.createElement("p", {
+                        }, Shared$ReactTemplate.show("About me")), React.createElement("p", {
                           className: "light"
-                        }, "I'm a software engineer with a passion for creating reliable, robust, and responsive services. I'm a fairly recent graduate of the Georgia Institute of Technology (December 2016), but that doesn't mean I'm done learning. Whether through my career, or personal projects, I hope to learn new technologies and make some new things too (and probably show them off here)."), React.createElement("span", {
+                        }, Shared$ReactTemplate.show("I'm a software engineer with a passion for creating reliable, robust, and responsive services. I'm a fairly recent graduate of the Georgia Institute of Technology (December 2016), but that doesn't mean I'm done learning. Whether through my career, or personal projects, I hope to learn new technologies and make some new things too (and probably show them off here).")), React.createElement("span", {
                           className: "light"
-                        }, "Things I like:"), React.createElement("ul", {
+                        }, Shared$ReactTemplate.show("Things I like:")), React.createElement("ul", {
                           className: "light browser-default"
                         }, React.createElement("li", {
-                              style: negTopMargin
-                            }, "Statically typed languages"), React.createElement("li", undefined, "Opinionated programming"), React.createElement("li", undefined, "Getting up early"), React.createElement("li", undefined, "Coffee")), React.createElement("span", {
+                              style: Shared$ReactTemplate.negTopMargin
+                            }, Shared$ReactTemplate.show("Statically typed languages")), React.createElement("li", undefined, Shared$ReactTemplate.show("Opinionated programming")), React.createElement("li", undefined, Shared$ReactTemplate.show("Getting up early")), React.createElement("li", undefined, Shared$ReactTemplate.show("Coffee"))), React.createElement("span", {
                           className: "light"
-                        }, /* array */[
-                          "Things I ",
-                          /* array */[
-                            bold("don't"),
-                            " like:"
-                          ]
-                        ]), React.createElement("ul", {
+                        }, Shared$ReactTemplate.$plus$plus$plus(Shared$ReactTemplate.show("Things I "), Shared$ReactTemplate.$plus$plus$plus(Shared$ReactTemplate.bold("don't"), Shared$ReactTemplate.show(" like:")))), React.createElement("ul", {
                           className: "light browser-default"
                         }, React.createElement("li", {
-                              style: negTopMargin
-                            }, "Html/javascript (you can probably tell)"), React.createElement("li", undefined, "Tomatoes. Just nope.")))), React.createElement("div", {
+                              style: Shared$ReactTemplate.negTopMargin
+                            }, Shared$ReactTemplate.show("Html/javascript (you can probably tell)")), React.createElement("li", undefined, Shared$ReactTemplate.show("Tomatoes. Just nope."))))), React.createElement("div", {
                   className: "col s12 m6"
                 }, React.createElement("div", {
                       className: "icon-block"
@@ -100,21 +69,19 @@ var about = React.createElement("div", {
                           className: "center brown-text"
                         }, React.createElement("i", {
                               className: "material-icons"
-                            }, "web")), React.createElement("h5", {
+                            }, Shared$ReactTemplate.show("web"))), React.createElement("h5", {
                           className: "center"
-                        }, "About this site"), React.createElement("p", {
+                        }, Shared$ReactTemplate.show("About this site")), React.createElement("p", {
                           className: "light"
-                        }, "This site serves two purposes. First, it's a place for me to showcase my most significant work. There's rather little of that at the moment, but I'll be adding anything interesting as I work on it."), React.createElement("p", {
+                        }, Shared$ReactTemplate.show("This site serves two purposes. First, it's a place for me to showcase my most significant work. There's rather little of that at the moment, but I'll be adding anything interesting as I work on it.")), React.createElement("p", {
                           className: "light"
-                        }, "Second, and perhaps more importantly, it's an opportunity for me to experiment with frontend design. The vast majority of my professional experience consists of backend or systems engineering. Regardless, I want to expand my knowledge of frontend design as much as possible in my free time. So I'm using this website for exactly that purpose."), React.createElement("p", {
+                        }, Shared$ReactTemplate.show("Second, and perhaps more importantly, it's an opportunity for me to experiment with frontend design. The vast majority of my professional experience consists of backend or systems engineering. Regardless, I want to expand my knowledge of frontend design as much as possible in my free time. So I'm using this website for exactly that purpose.")), React.createElement("p", {
                           className: "light"
-                        }, /* array */[
-                          "This site is built using ReasonML and React. You can find the source code on ",
-                          link("GitHub", "https://github.com/stevenmatthewt/stevenmatthewt.github.io")
-                        ]))))));
+                        }, Shared$ReactTemplate.$plus$plus$plus(Shared$ReactTemplate.show("This site is built using ReasonML and React. You can find the source code on "), Shared$ReactTemplate.link("GitHub", "https://github.com/stevenmatthewt/stevenmatthewt.github.io"))))))));
 
-var contact = React.createElement("div", {
-      className: "container"
+var projects = React.createElement("div", {
+      className: "container",
+      id: "projects"
     }, React.createElement("div", {
           className: "section"
         }, React.createElement("div", {
@@ -123,9 +90,13 @@ var contact = React.createElement("div", {
                   className: "col s12 center"
                 }, React.createElement("h3", undefined, React.createElement("i", {
                           className: "mdi-content-send brown-text"
-                        })), React.createElement("h4", undefined, "Contact Us"), React.createElement("p", {
-                      className: "left-align light"
-                    }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;")))));
+                        })), React.createElement("h4", undefined, Shared$ReactTemplate.show("Projects")))), React.createElement("div", {
+              className: "row"
+            }, React.createElement("div", {
+                  className: "col s12 m6"
+                }, Projects$ReactTemplate.semantics), React.createElement("div", {
+                  className: "col s12 m6"
+                }, Projects$ReactTemplate.concur))));
 
 function make() {
   var newrecord = component.slice();
@@ -138,14 +109,12 @@ function make() {
                               className: "container"
                             }, React.createElement("div", {
                                   className: "row center"
-                                }, React.createElement("h5", {
-                                      className: "header col s12 light"
-                                    }, "A modern responsive front-end framework based on Material Design")))), React.createElement("div", {
+                                }))), React.createElement("div", {
                           className: "parallax"
                         }, React.createElement("img", {
                               alt: "Unsplashed background img 2",
                               src: "/assets/img/background2.jpg"
-                            }))), contact, React.createElement("div", {
+                            }))), projects, React.createElement("div", {
                       className: "parallax-container valign-wrapper"
                     }, React.createElement("div", {
                           className: "section no-pad-bot"
@@ -153,9 +122,7 @@ function make() {
                               className: "container"
                             }, React.createElement("div", {
                                   className: "row center"
-                                }, React.createElement("h5", {
-                                      className: "header col s12 light"
-                                    }, "A modern responsive front-end framework based on Material Design")))), React.createElement("div", {
+                                }))), React.createElement("div", {
                           className: "parallax"
                         }, React.createElement("img", {
                               alt: "Unsplashed background img 3",
@@ -165,14 +132,24 @@ function make() {
   return newrecord;
 }
 
-exports.component = component;
+var show = Shared$ReactTemplate.show;
+
+var bold = Shared$ReactTemplate.bold;
+
+var negTopMargin = Shared$ReactTemplate.negTopMargin;
+
+var link = Shared$ReactTemplate.link;
+
+var $plus$plus$plus = Shared$ReactTemplate.$plus$plus$plus;
+
 exports.show = show;
 exports.bold = bold;
 exports.negTopMargin = negTopMargin;
 exports.link = link;
 exports.$plus$plus$plus = $plus$plus$plus;
+exports.component = component;
 exports.summary = summary;
 exports.about = about;
-exports.contact = contact;
+exports.projects = projects;
 exports.make = make;
 /* component Not a pure module */
