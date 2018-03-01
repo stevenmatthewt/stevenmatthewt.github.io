@@ -87,12 +87,6 @@ var projects = React.createElement("div", {
         }, React.createElement("div", {
               className: "row"
             }, React.createElement("div", {
-                  className: "col s12 center"
-                }, React.createElement("h3", undefined, React.createElement("i", {
-                          className: "mdi-content-send blue-text"
-                        })), React.createElement("h4", undefined, Shared$ReactTemplate.show("Projects")))), React.createElement("div", {
-              className: "row"
-            }, React.createElement("div", {
                   className: "col s12 m6 cards-container"
                 }, Projects$ReactTemplate.semantics, Projects$ReactTemplate.concur, Projects$ReactTemplate.inquiry), React.createElement("div", {
                   className: "col s12 m6 cards-container"
@@ -126,11 +120,11 @@ function make() {
                                   className: "row center"
                                 }, React.createElement("h4", {
                                       className: "header col s12"
-                                    }, Shared$ReactTemplate.show("I like cooking, so here's a random onion. No need to thank me."))))), React.createElement("div", {
+                                    }, Shared$ReactTemplate.show("I like cooking, so here are some random spices. No need to thank me."))))), React.createElement("div", {
                           className: "parallax"
                         }, React.createElement("img", {
                               alt: "Unsplashed background img 3",
-                              src: "/assets/img/background3.jpg"
+                              src: "/assets/img/background3.jpeg"
                             }))), Footer$ReactTemplate.render);
     });
   return newrecord;

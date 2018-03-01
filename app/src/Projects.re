@@ -7,7 +7,7 @@ let card = (title, description, link) => {
             <p className="light">(show(description))</p>
         </div>
         <div className="card-action">
-            {link}
+            {link |> ReasonReact.arrayToElement}
         </div>
     </div>
 };
@@ -15,34 +15,34 @@ let card = (title, description, link) => {
 let semantics = {
     card("Semantics",
         "A CLI tool built using Golang to automatically manage semantic versioning of projects.",
-        link("Find it on GitHub", "https://github.com/stevenmatthewt/semantics")
+        [|link("GitHub", "https://github.com/stevenmatthewt/semantics")|]
     )
 };
 
 let concur = {
     card("Concur",
         "A Golang package to facilitate with Go concurrency.",
-        link("Find it on GitHub", "https://github.com/stevenmatthewt/concur")
+        [|link("GitHub", "https://github.com/stevenmatthewt/concur"), link("Godoc", "https://godoc.org/github.com/stevenmatthewt/concur")|]
     )
 };
 
 let dotfiles = {
     card("Dotfiles",
         "My personal dotfiles used to setup my computers.",
-        link("Find it on GitHub", "https://github.com/stevenmatthewt/dotfiles")
+        [|link("GitHub", "https://github.com/stevenmatthewt/dotfiles")|]
     )
 };
 
 let template = {
     card("Tmpl",
         "A Golang CLI tool to generate projects based off of templates.",
-        link("Find it on GitHub", "https://github.com/stevenmatthewt/template")
+        [|link("GitHub", "https://github.com/stevenmatthewt/template")|]
     )
 };
 
 let inquiry = {
     card("Inquiry",
         "A Golang library to facilitate marshalling/unmarshalling query string parameters in Golang APIs.",
-        link("Find it on GitHub", "https://github.com/stevenmatthewt/inquiry")
+        [|link("GitHub", "https://github.com/stevenmatthewt/inquiry"), link("Godoc", "https://godoc.org/github.com/stevenmatthewt/inquiry")|]
     )
 };

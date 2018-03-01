@@ -16,15 +16,21 @@ function card(title, description, link) {
                 }, link));
 }
 
-var semantics = card("Semantics", "A CLI tool built using Golang to automatically manage semantic versioning of projects.", Shared$ReactTemplate.link("Find it on GitHub", "https://github.com/stevenmatthewt/semantics"));
+var semantics = card("Semantics", "A CLI tool built using Golang to automatically manage semantic versioning of projects.", /* array */[Shared$ReactTemplate.link("GitHub", "https://github.com/stevenmatthewt/semantics")]);
 
-var concur = card("Concur", "A Golang package to facilitate with Go concurrency.", Shared$ReactTemplate.link("Find it on GitHub", "https://github.com/stevenmatthewt/concur"));
+var concur = card("Concur", "A Golang package to facilitate with Go concurrency.", /* array */[
+      Shared$ReactTemplate.link("GitHub", "https://github.com/stevenmatthewt/concur"),
+      Shared$ReactTemplate.link("Godoc", "https://godoc.org/github.com/stevenmatthewt/concur")
+    ]);
 
-var dotfiles = card("Dotfiles", "My personal dotfiles used to setup my computers.", Shared$ReactTemplate.link("Find it on GitHub", "https://github.com/stevenmatthewt/dotfiles"));
+var dotfiles = card("Dotfiles", "My personal dotfiles used to setup my computers.", /* array */[Shared$ReactTemplate.link("GitHub", "https://github.com/stevenmatthewt/dotfiles")]);
 
-var template = card("Tmpl", "A Golang CLI tool to generate projects based off of templates.", Shared$ReactTemplate.link("Find it on GitHub", "https://github.com/stevenmatthewt/template"));
+var template = card("Tmpl", "A Golang CLI tool to generate projects based off of templates.", /* array */[Shared$ReactTemplate.link("GitHub", "https://github.com/stevenmatthewt/template")]);
 
-var inquiry = card("Inquiry", "A Golang library to facilitate marshalling/unmarshalling query string parameters in Golang APIs.", Shared$ReactTemplate.link("Find it on GitHub", "https://github.com/stevenmatthewt/inquiry"));
+var inquiry = card("Inquiry", "A Golang library to facilitate marshalling/unmarshalling query string parameters in Golang APIs.", /* array */[
+      Shared$ReactTemplate.link("GitHub", "https://github.com/stevenmatthewt/inquiry"),
+      Shared$ReactTemplate.link("Godoc", "https://godoc.org/github.com/stevenmatthewt/inquiry")
+    ]);
 
 var show = Shared$ReactTemplate.show;
 

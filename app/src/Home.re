@@ -71,15 +71,6 @@ let about = {
 let projects = {
   <div id="projects" className="container">
     <div className="section">
-
-      <div className="row">
-        <div className="col s12 center">
-          <h3>
-            <i className="mdi-content-send blue-text"></i>
-          </h3>
-          <h4>(show("Projects"))</h4>
-        </div>
-      </div>
       <div className="row">
         <div className="col s12 m6 cards-container">
           {Projects.semantics}
@@ -130,12 +121,12 @@ let make = (_children) => {
     <div className="section no-pad-bot">
       <div className="container">
         <div className="row center">
-          <h4 className="header col s12">(show("I like cooking, so here's a random onion. No need to thank me."))</h4>
+          <h4 className="header col s12">(show("I like cooking, so here are some random spices. No need to thank me."))</h4>
         </div>
       </div>
     </div>
     <div className="parallax">
-      <img src="/assets/img/background3.jpg" alt="Unsplashed background img 3"/>
+      <img src="/assets/img/background3.jpeg" alt="Unsplashed background img 3"/>
     </div>
   </div>
 

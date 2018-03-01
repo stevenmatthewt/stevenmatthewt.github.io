@@ -30395,12 +30395,6 @@ var projects = React.createElement("div", {
         }, React.createElement("div", {
               className: "row"
             }, React.createElement("div", {
-                  className: "col s12 center"
-                }, React.createElement("h3", undefined, React.createElement("i", {
-                          className: "mdi-content-send blue-text"
-                        })), React.createElement("h4", undefined, Shared$ReactTemplate.show("Projects")))), React.createElement("div", {
-              className: "row"
-            }, React.createElement("div", {
                   className: "col s12 m6 cards-container"
                 }, Projects$ReactTemplate.semantics, Projects$ReactTemplate.concur, Projects$ReactTemplate.inquiry), React.createElement("div", {
                   className: "col s12 m6 cards-container"
@@ -30434,11 +30428,11 @@ function make() {
                                   className: "row center"
                                 }, React.createElement("h4", {
                                       className: "header col s12"
-                                    }, Shared$ReactTemplate.show("I like cooking, so here's a random onion. No need to thank me."))))), React.createElement("div", {
+                                    }, Shared$ReactTemplate.show("I like cooking, so here are some random spices. No need to thank me."))))), React.createElement("div", {
                           className: "parallax"
                         }, React.createElement("img", {
                               alt: "Unsplashed background img 3",
-                              src: "/assets/img/background3.jpg"
+                              src: "/assets/img/background3.jpeg"
                             }))), Footer$ReactTemplate.render);
     });
   return newrecord;
@@ -31370,15 +31364,21 @@ function card(title, description, link) {
                 }, link));
 }
 
-var semantics = card("Semantics", "A CLI tool built using Golang to automatically manage semantic versioning of projects.", Shared$ReactTemplate.link("Find it on GitHub", "https://github.com/stevenmatthewt/semantics"));
+var semantics = card("Semantics", "A CLI tool built using Golang to automatically manage semantic versioning of projects.", /* array */[Shared$ReactTemplate.link("GitHub", "https://github.com/stevenmatthewt/semantics")]);
 
-var concur = card("Concur", "A Golang package to facilitate with Go concurrency.", Shared$ReactTemplate.link("Find it on GitHub", "https://github.com/stevenmatthewt/concur"));
+var concur = card("Concur", "A Golang package to facilitate with Go concurrency.", /* array */[
+      Shared$ReactTemplate.link("GitHub", "https://github.com/stevenmatthewt/concur"),
+      Shared$ReactTemplate.link("Godoc", "https://godoc.org/github.com/stevenmatthewt/concur")
+    ]);
 
-var dotfiles = card("Dotfiles", "My personal dotfiles used to setup my computers.", Shared$ReactTemplate.link("Find it on GitHub", "https://github.com/stevenmatthewt/dotfiles"));
+var dotfiles = card("Dotfiles", "My personal dotfiles used to setup my computers.", /* array */[Shared$ReactTemplate.link("GitHub", "https://github.com/stevenmatthewt/dotfiles")]);
 
-var template = card("Tmpl", "A Golang CLI tool to generate projects based off of templates.", Shared$ReactTemplate.link("Find it on GitHub", "https://github.com/stevenmatthewt/template"));
+var template = card("Tmpl", "A Golang CLI tool to generate projects based off of templates.", /* array */[Shared$ReactTemplate.link("GitHub", "https://github.com/stevenmatthewt/template")]);
 
-var inquiry = card("Inquiry", "A Golang library to facilitate marshalling/unmarshalling query string parameters in Golang APIs.", Shared$ReactTemplate.link("Find it on GitHub", "https://github.com/stevenmatthewt/inquiry"));
+var inquiry = card("Inquiry", "A Golang library to facilitate marshalling/unmarshalling query string parameters in Golang APIs.", /* array */[
+      Shared$ReactTemplate.link("GitHub", "https://github.com/stevenmatthewt/inquiry"),
+      Shared$ReactTemplate.link("Godoc", "https://godoc.org/github.com/stevenmatthewt/inquiry")
+    ]);
 
 var show = Shared$ReactTemplate.show;
 
